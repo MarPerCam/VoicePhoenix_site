@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="VoicePhoenix — Assistente cognitivo wearable que captura conversas e gera resumos inteligentes com IA. Nunca mais perca um detalhe importante.">
+  <meta name="keywords"
+    content="VoicePhoenix, assistente cognitivo, wearable, IA, resumo de conversas, ESP32, Whisper, DeepSeek">
+  <title>VoicePhoenix — Seu Assistente Cognitivo com IA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+
+<body>
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="navbar__logo">
+        <img src="assets/images/logo.png" alt="VoicePhoenix Logo">
+        Voice<span>Phoenix</span>
+      </a>
+
+      <div class="navbar__links" id="navLinks">
+        <a href="#hero" class="navbar__link active">Início</a>
+        <a href="#about" class="navbar__link">O Projeto</a>
+        <a href="#pipeline" class="navbar__link">Como Funciona</a>
+        <a href="#tech" class="navbar__link">Tecnologias</a>
+        <a href="#team" class="navbar__link">Criadores</a>
+        <a href="#team" class="navbar__cta">Conheça o Time ↗</a>
+      </div>
+
+      <div class="navbar__toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero section" id="hero">
+    <!-- Background glows -->
+    <div class="bg-glow bg-glow--orange" style="width:500px;height:500px;top:-150px;right:-100px;"></div>
+    <div class="bg-glow bg-glow--navy" style="width:400px;height:400px;bottom:-100px;left:-100px;"></div>
+
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="pulse-dot"></span>
+            Projeto em Desenvolvimento Ativo
+          </div>
+
+          <h1 class="hero__title">
+            Ouça, Processe,<br>
+            <span class="highlight">Lembre de Tudo.</span>
+          </h1>
+
+          <p class="hero__description">
+            O VoicePhoenix é um wearable cognitivo que captura suas conversas em tempo real e usa Inteligência
+            Artificial para gerar resumos inteligentes — para que você nunca mais perca um detalhe importante.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#about" class="btn-primary">
+              Saiba Mais
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+            </a>
+            <a href="#pipeline" class="btn-secondary">
+              Como Funciona
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-value">ESP32-C3</div>
+              <div class="hero__stat-label">Microcontrolador</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-value">Whisper</div>
+              <div class="hero__stat-label">STT Engine</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-value">DeepSeek</div>
+              <div class="hero__stat-label">LLM Local</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__image-wrapper">
+            <img src="assets/images/hero.png" alt="VoicePhoenix — Dispositivo wearable cognitivo com IA">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid reveal">
+        <div class="about__image">
+          <img src="assets/images/pipeline.png" alt="Pipeline de processamento VoicePhoenix">
+        </div>
+
+        <div class="about__content">
+          <span class="section-label">O Projeto</span>
+          <h2 class="section-title">
+            Um wearable que<br><span class="highlight">pensa por você</span>
+          </h2>
+          <p class="about__text">
+            O <strong>VoicePhoenix</strong> nasceu da necessidade de registrar e organizar informações que recebemos ao
+            longo do dia em reuniões, aulas e conversas importantes.
+          </p>
+          <p class="about__text">
+            É um dispositivo compacto e elegante que você carrega consigo. Ele captura o áudio ambiente, transcreve tudo
+            automaticamente usando o modelo Whisper da OpenAI e, em seguida, processa o texto com o DeepSeek — uma LLM
+            local — para gerar resumos estruturados, pontos-chave e itens de ação.
+          </p>
+          <p class="about__text">
+            Tudo acontece de forma local e segura, sem depender de serviços em nuvem. Suas conversas permanecem
+            privadas, e os resumos ficam acessíveis através de um dashboard intuitivo.
+          </p>
+          <a href="projeto.html" class="btn-saibamais">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="features-grid reveal">
+        <div class="feature-card">
+          <div class="feature-card__icon">🎙️</div>
+          <h3 class="feature-card__title">Captura Inteligente</h3>
+          <p class="feature-card__text">Áudio capturado via I2S com DMA no ESP32-C3, otimizado para baixo consumo de
+            energia com buffer em SD card.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🧠</div>
+          <h3 class="feature-card__title">IA Local</h3>
+          <p class="feature-card__text">Processamento completo em servidor nuvem: transcrição com Whisper e análise
+            semântica com DeepSeek.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🔒</div>
+          <h3 class="feature-card__title">Privacidade Total</h3>
+          <p class="feature-card__text">Todas as conversas são processadas e armazenadas localmente. Nenhum dado sai da
+            sua rede pessoal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PIPELINE / COMO FUNCIONA ===================== -->
+  <section class="pipeline section" id="pipeline">
+    <div class="bg-glow bg-glow--orange"
+      style="width:400px;height:400px;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+
+    <div class="container">
+      <div style="text-align:center;" class="reveal">
+        <span class="section-label">Como Funciona</span>
+        <h2 class="section-title">
+          Do áudio ao <span class="highlight">insight em segundos</span>
+        </h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          Um pipeline completo de captura, transcrição e análise inteligente — tudo de forma automática e transparente.
+        </p>
+      </div>
+
+      <div class="steps reveal">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3 class="step__title">Captura</h3>
+          <p class="step__text">O microfone INMP441 captura o áudio via interface I2S com DMA no ESP32-C3 SuperMini.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3 class="step__title">Transmissão</h3>
+          <p class="step__text">O áudio é enviado via WiFi (TLS/SSL) para o servidor backend local usando protocolo HTTP
+            POST.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3 class="step__title">Transcrição</h3>
+          <p class="step__text">O OpenAI Whisper transcreve o áudio em texto de alta qualidade, rodando localmente no
+            servidor.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">4</div>
+          <h3 class="step__title">Análise IA</h3>
+          <p class="step__text">O DeepSeek processa a transcrição e gera resumos, pontos-chave e itens de ação
+            automaticamente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TECH STACK ===================== -->
+  <section class="tech section" id="tech">
+    <div class="container">
+      <div style="text-align:center;" class="reveal">
+        <span class="section-label">Tecnologias</span>
+        <h2 class="section-title">
+          As ferramentas por trás<br>do <span class="highlight">VoicePhoenix</span>
+        </h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          Um stack moderno e robusto, unindo hardware embarcado de ponta com IA de última geração.
+        </p>
+      </div>
+
+      <div class="tech-grid reveal">
+        <!-- Hardware -->
+        <div class="tech-card">
+          <span class="tech-card__icon">⚡</span>
+          <span class="tech-card__category">Hardware</span>
+          <h3 class="tech-card__name">ESP32-C3 SuperMini</h3>
+          <p class="tech-card__description">Microcontrolador RISC-V com WiFi/BLE, ultra-baixo consumo, ideal para
+            wearables. Gerenciamento via FreeRTOS.</p>
+        </div>
+
+        <div class="tech-card">
+          <span class="tech-card__icon">🎤</span>
+          <span class="tech-card__category">Hardware</span>
+          <h3 class="tech-card__name">INMP441</h3>
+          <p class="tech-card__description">Microfone MEMS digital com interface I2S, alta sensibilidade e baixo ruído.
+            Perfeito para captura de voz.</p>
+        </div>
+
+        <div class="tech-card">
+          <span class="tech-card__icon">💾</span>
+          <span class="tech-card__category">Hardware</span>
+          <h3 class="tech-card__name">MicroSD Card</h3>
+          <p class="tech-card__description">Buffer de áudio offline via SPI. Garante resiliência quando a conexão WiFi
+            está indisponível.</p>
+        </div>
+
+        <!-- Software -->
+        <div class="tech-card">
+          <span class="tech-card__icon">🗣️</span>
+          <span class="tech-card__category">IA / Software</span>
+          <h3 class="tech-card__name">OpenAI Whisper</h3>
+          <p class="tech-card__description">Motor de Speech-to-Text de última geração, executado localmente para
+            transcrição de alta qualidade em múltiplos idiomas.</p>
+        </div>
+
+        <div class="tech-card">
+          <span class="tech-card__icon">🤖</span>
+          <span class="tech-card__category">IA / Software</span>
+          <h3 class="tech-card__name">DeepSeek</h3>
+          <p class="tech-card__description">LLM local que analisa transcrições e gera resumos, pontos-chave e itens de
+            ação de forma inteligente.</p>
+        </div>
+
+        <div class="tech-card">
+          <span class="tech-card__icon">🚀</span>
+          <span class="tech-card__category">Backend</span>
+          <h3 class="tech-card__name">FastAPI + SQLAlchemy</h3>
+          <p class="tech-card__description">API REST de alta performance com Python, banco de dados local e endpoints
+            para upload de áudio e consulta de memórias.</p>
+        </div>
+
+        <div class="tech-card">
+          <span class="tech-card__icon">🔧</span>
+          <span class="tech-card__category">Firmware</span>
+          <h3 class="tech-card__name">PlatformIO + Arduino</h3>
+          <p class="tech-card__description">Framework de desenvolvimento para o ESP32-C3, com suporte a bibliotecas como
+            ArduinoJson e gerenciamento de partições.</p>
+        </div>
+
+        <div class="tech-card">
+          <span class="tech-card__icon">📊</span>
+          <span class="tech-card__category">Frontend</span>
+          <h3 class="tech-card__name">Dashboard Web</h3>
+          <p class="tech-card__description">Interface web responsiva para visualizar transcrições recentes, resumos e
+            insights gerados pela IA local.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAM / CRIADORES ===================== -->
+  <section class="team section" id="team">
+    <div class="container">
+      <div style="text-align:center;" class="reveal">
+        <span class="section-label">Criadores</span>
+        <h2 class="section-title">
+          A equipe por trás do <span class="highlight">projeto</span>
+        </h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          Estudantes apaixonados por tecnologia, unindo hardware e software para criar algo inovador.
+        </p>
+      </div>
+
+      <div class="team-grid reveal">
+        <a href="criadores.html" style="text-decoration: none; color: inherit; display: block;">
+          <div class="team-card">
+            <img class="team-card__avatar team-card__avatar--photo team-card__avatar--marcelo"
+              src="assets/images/marcelo.jpeg" alt="Marcelo Perotta">
+            <h3 class="team-card__name">Marcelo Perotta</h3>
+            <span class="team-card__role">Desenvolvimento & Integração</span>
+            <p class="team-card__bio">Responsável pela arquitetura do sistema, desenvolvimento do firmware ESP32-C3,
+              backend FastAPI e integração completa do pipeline de IA.</p>
+          </div>
+        </a>
+
+        <a href="criadores.html" style="text-decoration: none; color: inherit; display: block;">
+          <div class="team-card">
+            <img class="team-card__avatar team-card__avatar--photo team-card__avatar--andre"
+              src="assets/images/andre.jpeg" alt="André Luís">
+            <h3 class="team-card__name">André Luís</h3>
+            <span class="team-card__role">Hardware & Eletrônica</span>
+            <p class="team-card__bio">Responsável pelo design do circuito, seleção de componentes, prototipagem e testes
+              de integração do hardware wearable.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/images/logo.png" alt="VoicePhoenix">
+            Voice<span>Phoenix</span>
+          </div>
+          <p class="footer__description">
+            Um projeto acadêmico que une hardware embarcado, inteligência artificial e design para criar a próxima
+            geração de assistentes cognitivos pessoais.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Navegação</h4>
+          <ul class="footer__link-list">
+            <li><a href="#hero" class="footer__link">Início</a></li>
+            <li><a href="#about" class="footer__link">O Projeto</a></li>
+            <li><a href="#pipeline" class="footer__link">Como Funciona</a></li>
+            <li><a href="#tech" class="footer__link">Tecnologias</a></li>
+            <li><a href="#team" class="footer__link">Criadores</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Tecnologias</h4>
+          <ul class="footer__link-list">
+            <li><a href="#tech" class="footer__link">ESP32-C3</a></li>
+            <li><a href="#tech" class="footer__link">OpenAI Whisper</a></li>
+            <li><a href="#tech" class="footer__link">DeepSeek</a></li>
+            <li><a href="#tech" class="footer__link">FastAPI</a></li>
+            <li><a href="#tech" class="footer__link">PlatformIO</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 VoicePhoenix. Sesi Referência de Maringá. Produtores: Marcelo Perotta Campello;
+          André Luís Batista. Orientadora: Mariana Wendt . Coorientador: Lucas Forlin </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://github.com/MarPerCam/VoicePhoenix" target="_blank" class="github-floating" aria-label="GitHub">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

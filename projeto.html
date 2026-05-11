@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Projeto — VoicePhoenix</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+
+<body>
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/images/logo.png" alt="VoicePhoenix Logo">
+        Voice<span>Phoenix</span>
+      </a>
+      <div class="navbar__links" id="navLinks" style="display: flex;">
+        <a href="index.html" class="navbar__link">Voltar para o Início</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== NOSSO PROJETO ===================== -->
+  <section class="section" style="padding-top: 150px;">
+    <div class="bg-glow bg-glow--orange" style="width:500px;height:500px;top:10%;left:5%;"></div>
+    <div class="bg-glow bg-glow--navy" style="width:500px;height:500px;bottom:10%;right:5%;"></div>
+    <div class="container">
+
+      <div style="text-align:center; margin-bottom: 60px;" class="reveal visible">
+        <h1 class="section-title" style="display: inline-block; color: var(--orange); font-size: 4rem;">Nosso Projeto
+        </h1>
+      </div>
+
+      <!-- ===================== O DESAFIO ===================== -->
+      <div style="text-align:center; margin-bottom: 60px; margin-top: 40px;" class="reveal visible">
+        <h1 class="section-title highlight" style="display: inline-block; font-size: 3rem;">O Desafio</h1>
+      </div>
+
+      <div class="about__grid reveal visible" style="margin-bottom: 80px;">
+        <div class="about__content">
+          <p class="about__text">
+            O dia a dia moderno impõe grandes barreiras àqueles com variações neurocognitivas. Um dos principais
+            obstáculos enfrentados é a <strong>dificuldade em manter registros</strong> organizados do dia a dia, de
+            aulas, palestras , reuniões , entre outras fontes de informação .
+          </p>
+          <p class="about__text">
+            Isso frequentemente resulta na <strong>perda de informações importantes</strong>, gerando retrabalho e
+            frustração. A necessidade de reter tantos dados causa uma severa <strong>sobrecarga cognitiva</strong>,
+            exigindo muito mais esforço mental para atividades cotidianas.
+          </p>
+          <p class="about__text">
+            Consequentemente, cria-se uma <strong>dependência de terceiros</strong> para revisar anotações ou relembrar
+            detalhes cruciais, limitando a autonomia pessoal e profissional.Por Isso apresentamos o
+            <strong>VoicePhoenix</strong>.
+          </p>
+        </div>
+        <div class="about__image">
+          <img src="assets/images/desafio_novo.png" alt="Ilustração do Desafio Cognitivo"
+            style="width: 100%; border-radius: var(--border-radius-lg); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);">
+        </div>
+      </div>
+
+      <!-- ===================== O DISPOSITIVO ===================== -->
+      <div class="about__grid reveal visible" style="margin-bottom: 80px;">
+        <div class="about__image">
+          <img src="assets/images/hero.png" alt="O Projeto VoicePhoenix"
+            style="width: 100%; border-radius: var(--border-radius-lg); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);">
+        </div>
+        <div class="about__content">
+          <h2 class="section-title">O Dispositivo</h2>
+          <p class="about__text">
+            O VoicePhoenix é uma solução completa para assistência cognitiva vestível. Construído em torno do
+            microcontrolador ESP32-C3, o hardware foi pensado para ser leve, discreto , de baixo consumo energético e
+            operacional. Ele
+            captura o áudio através de um microfone I2S de alta fidelidade e processa as informações em tempo real.
+          </p>
+          <p class="about__text">
+            No lado do servidor, utilizamos a poderosa inteligência artificial do modelo Whisper para realizar a
+            transcrição precisa da fala. Em seguida, o texto é passado para um modelo DeepSeek, responsável por extrair
+            os pontos principais, gerando resumos que facilitam a recordação e a organização do seu dia.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===================== IMPACTOS SOCIAIS ===================== -->
+      <div style="text-align:center; margin-bottom: 60px; margin-top: 100px;" class="reveal visible">
+        <h1 class="section-title highlight" style="display: inline-block; font-size: 4rem;">Impactos Sociais</h1>
+      </div>
+
+      <div class="about__grid reveal visible" style="margin-bottom: 80px;">
+        <div class="about__content">
+          <p class="about__text">
+            Acreditamos que a tecnologia deve servir para melhorar a qualidade de vida. O VoicePhoenix
+            foi concebido com
+            o objetivo de auxiliar pessoas com dificuldades de memória, bem como indivíduos com <strong>TDAH, Dislexia e
+              pessoas
+              no espectro Autista</strong>, que frequentemente lidam com uma sobrecarga de informações diárias.
+          </p>
+          <p class="about__text">
+            Ao automatizar o registro de reuniões e aulas, reduzimos a carga cognitiva do usuário, permitindo que ele
+            esteja mais presente no momento, sem a ansiedade de esquecer detalhes cruciais. Este projeto demonstra como
+            inteligência artificial acessível e processamento focado podem criar ferramentas assistivas que garantem
+            autonomia, igualdade e empoderamento.
+          </p>
+        </div>
+        <div class="about__image">
+          <img src="assets/images/impactos_novo.png" alt="Ilustração de Impacto Social"
+            style="width: 100%; border-radius: var(--border-radius-lg); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" style="padding-top: 32px; border-top: 1px solid rgba(255, 255, 255, 0.06);">
+    <div class="container">
+      <div class="footer__bottom" style="border-top: none; padding-top: 0;">
+        <p class="footer__copy">© 2026 VoicePhoenix. Sesi Referência de Maringá. Produtores: Marcelo Perotta Campello;
+          André Luís Batista. Orientadora: Mariana Wendt. Coorientador: Lucas Forlin</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating GitHub Button -->
+  <a href="https://github.com/MarPerCam/VoicePhoenix" target="_blank" class="github-floating" aria-label="GitHub">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+    </svg>
+  </a>
+</body>
+
+</html>
